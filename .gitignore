@@ -1,0 +1,19 @@
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editory
+.vscode/
+.idea/
+
+# Node (pokud bude build)
+node_modules/
+dist/
+.cache/
+
+# Dočasné / build PDF
+*.tmp
+*.log
+brozura/*.aux
+brozura/*.out
