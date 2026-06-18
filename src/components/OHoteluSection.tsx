@@ -34,7 +34,7 @@ export default function OHoteluSection() {
       {/* Co pobyt obsahuje */}
       <div className="mb-16 rounded-3xl border border-gold-400/20 bg-gold-400/5 p-8">
         <h3 className="mb-5 font-[family-name:var(--font-display)] text-2xl font-semibold text-white">
-          Co máte zaplacené
+          Co je součástí dárkového poukazu
         </h3>
         <ul className="grid gap-3 sm:grid-cols-2">
           {hotel.pobytObsahuje.map((p) => (
@@ -49,9 +49,6 @@ export default function OHoteluSection() {
           <p>
             <span className="font-medium text-gold-400">🗓️ Platnost poukazu:</span>{' '}
             {hotel.platnost}
-          </p>
-          <p>
-            <span className="font-medium text-gold-400">🏷️ Na místě:</span> {hotel.mistniPoplatek}
           </p>
           <p>
             <span className="font-medium text-gold-400">📞 Rezervace:</span> pokoj si rezervujte

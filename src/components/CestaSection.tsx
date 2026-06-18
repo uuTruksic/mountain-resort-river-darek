@@ -26,8 +26,8 @@ export default function CestaSection() {
           Jak se tam dostat
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-slate-300">
-          Ze Třtice do Ždiaru je to pořádný kus cesty — tady je trasa a pár míst, kde se dá
-          cestou zastavit a protáhnout.
+          Cesta do Ždiaru vede přes hezká místa Vysočiny, jižní Moravy i Slovenska. S pár
+          zastávkami na protažení a kávu z ní bude příjemný den na cestě — a na konci čekají Tatry.
         </p>
       </motion.div>
 

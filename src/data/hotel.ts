@@ -12,16 +12,21 @@ export const hotel = {
   poloha:
     'Leží přímo ve Ždiaru, v chráněné krajinné oblasti Belianských Tater. Lyžařské svahy jsou do 500 m, Chodník korunami stromů Bachledka ~4 km, Belianská jaskyňa ~7 km a celé Vysoké Tatry máte na dosah.',
 
-  // celkové fotky hotelu (exteriér, lobby, restaurace, bufet, bar, wellness…)
+  // celkové fotky hotelu (exteriér, lobby, restaurace, bar, wellness, pokoje…)
   fotky: [
     'hotel-14.webp',
     'hotel-20.webp',
+    'hotel-4.webp',
     'hotel-5.webp',
     'hotel-3.webp',
+    'hotel-17.webp',
     'hotel-13.webp',
     'hotel-19.webp',
     'hotel-2.webp',
     'hotel-12.webp',
+    'hotel-9.webp',
+    'hotel-11.webp',
+    'hotel-16.webp',
   ],
 
   // pokoj, který mají rodiče rezervovaný
@@ -46,10 +51,11 @@ export const hotel = {
     { ikona: '🍽️', text: 'Vlastní restaurace se slovenskou kuchyní' },
     { ikona: '💆', text: 'Privátní wellness / vířivka (1 h)' },
     { ikona: '🍷', text: 'Bar — vína, piva i káva' },
-    { ikona: '🧒', text: 'Dětský koutek a hřiště' },
+    { ikona: '🏔️', text: 'Výhled na Belianske Tatry' },
+    { ikona: '🌲', text: 'Klidná poloha v horské vesnici' },
+    { ikona: '🪵', text: 'Útulné tradiční dřevěné interiéry' },
     { ikona: '🅿️', text: 'Parkování zdarma' },
     { ikona: '📶', text: 'Wi-Fi zdarma' },
-    { ikona: '⛷️', text: 'Sjezdovky do 500 m' },
     { ikona: '💳', text: 'Platba kartou' },
   ],
 
@@ -58,9 +64,9 @@ export const hotel = {
     'Snídaně a večeře formou švédských stolů (bufet)',
     '1 hodina privátní vstup do wellness',
     'Parkování',
+    'Místní poplatek obci',
   ],
   platnost: '15. 6. 2026 – 20. 12. 2026 a 10. 1. 2027 – 20. 12. 2027',
-  mistniPoplatek: 'Místní poplatek obci 2 € / dospělý / noc (platí se na místě)',
 
   zajimavosti: [
     'Ždiar je tradiční goralská obec s typickou dřevěnou architekturou — jedna z nejhezčích podtatranských vesnic.',

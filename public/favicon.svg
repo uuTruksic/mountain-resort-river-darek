@@ -1,5 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#0f172a" />
-  <path d="M8 46 L24 22 L34 38 L42 26 L56 46 Z" fill="#d8b15a" />
-  <path d="M24 22 L29 30 L26 34 L22 28 Z" fill="#fff" opacity="0.85" />
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#13233a" />
+      <stop offset="1" stop-color="#0b1120" />
+    </linearGradient>
+    <linearGradient id="peak" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e6c373" />
+      <stop offset="1" stop-color="#c99a45" />
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="14" fill="url(#bg)" />
+
+  <!-- měsíc -->
+  <circle cx="45" cy="19" r="5.5" fill="#d8b15a" opacity="0.9" />
+
+  <!-- vzdálenější hřeben -->
+  <path d="M2 52 L18 33 L30 45 L41 31 L62 52 Z" fill="#27405d" />
+
+  <!-- hlavní zlaté štíty -->
+  <path d="M2 53 L23 25 L35 43 L45 32 L62 53 Z" fill="url(#peak)" />
+
+  <!-- sníh na vrcholu -->
+  <path d="M23 25 L28.5 33.5 L25 37 L19.5 30.5 Z" fill="#ffffff" opacity="0.92" />
 </svg>
