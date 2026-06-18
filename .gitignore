@@ -17,3 +17,5 @@ dist/
 *.log
 brozura/*.aux
 brozura/*.out
+brozura/*.pdf
+brozura/*.png
