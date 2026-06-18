@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { vylety } from '../data/vylety'
+import UvodniObalka from '../components/UvodniObalka'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -39,7 +40,9 @@ const tipy = vylety.filter((v) => v.doporuceno).slice(0, 3)
 
 export default function HomePage() {
   return (
-    <main className="relative overflow-hidden">
+    <>
+      <UvodniObalka />
+      <main className="relative overflow-hidden">
       {/* Pozadí celé stránky */}
       <div className="absolute inset-0 -z-20 bg-gradient-to-b from-night-950 via-night-900 to-[#13233a]" />
 
@@ -210,7 +213,8 @@ export default function HomePage() {
           </Link>
         </div>
       </section>
-    </main>
+      </main>
+    </>
   )
 }
 

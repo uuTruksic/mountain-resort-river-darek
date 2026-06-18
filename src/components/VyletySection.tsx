@@ -1,5 +1,5 @@
 import { useMemo, type ReactNode } from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import { vylety } from '../data/vylety'
 import {
@@ -20,7 +20,6 @@ const SEZONA_VOLBY: { id: SezonaFilter; label: string }[] = [
   { id: 'vse', label: 'Vše' },
   { id: 'leto', label: SEZONA_LABEL.leto },
   { id: 'zima', label: SEZONA_LABEL.zima },
-  { id: 'celorocne', label: SEZONA_LABEL.celorocne },
 ]
 
 const TYP_VOLBY: { id: TypFilter; label: string }[] = [
@@ -92,13 +91,11 @@ export default function VyletySection() {
       </div>
 
       {/* Karty */}
-      <motion.div layout className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <AnimatePresence mode="popLayout">
-          {filtrovane.map((v) => (
-            <VyletKarta key={v.id} vylet={v} onOtevri={() => navigate(`/vylet/${v.id}`)} />
-          ))}
-        </AnimatePresence>
-      </motion.div>
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {filtrovane.map((v) => (
+          <VyletKarta key={v.id} vylet={v} onOtevri={() => navigate(`/vylet/${v.id}`)} />
+        ))}
+      </div>
 
       {filtrovane.length === 0 && (
         <p className="mt-10 text-center text-slate-400">
@@ -147,11 +144,10 @@ function FilterRadek<T extends string>({
 function VyletKarta({ vylet, onOtevri }: { vylet: Vylet; onOtevri: () => void }) {
   return (
     <motion.article
-      layout
-      initial={{ opacity: 0, scale: 0.96 }}
-      animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 0.96 }}
-      transition={{ duration: 0.35 }}
+      initial={{ opacity: 0, y: 14 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '-40px' }}
+      transition={{ duration: 0.4, ease: 'easeOut' }}
       onClick={onOtevri}
       onKeyDown={(e) => {
         if (e.key === 'Enter' || e.key === ' ') {
@@ -234,7 +230,7 @@ function Stitek({ children }: { children: ReactNode }) {
 }
 
 function normSezona(v: string | null): SezonaFilter {
-  return v === 'leto' || v === 'zima' || v === 'celorocne' ? v : 'vse'
+  return v === 'leto' || v === 'zima' ? v : 'vse'
 }
 
 function normTyp(v: string | null): TypFilter {
