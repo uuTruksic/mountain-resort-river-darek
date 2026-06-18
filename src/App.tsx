@@ -9,7 +9,6 @@ import ZastavkaDetailPage from './pages/ZastavkaDetailPage'
 import ProgramPage from './pages/ProgramPage'
 import ProgramDenPage from './pages/ProgramDenPage'
 import PraktickePage from './pages/PraktickePage'
-import BrozuraPage from './pages/BrozuraPage'
 import PoukazPage from './pages/PoukazPage'
 
 export default function App() {
@@ -26,8 +25,7 @@ export default function App() {
         <Route path="/zastavka/:id" element={<ZastavkaDetailPage />} />
         <Route path="/prakticke" element={<PraktickePage />} />
       </Route>
-      {/* brožura a poukaz k tisku — mimo Layout (bez navigace) */}
-      <Route path="/brozura" element={<BrozuraPage />} />
+      {/* dárkový poukaz k tisku — mimo Layout (bez navigace) */}
       <Route path="/poukaz" element={<PoukazPage />} />
     </Routes>
   )

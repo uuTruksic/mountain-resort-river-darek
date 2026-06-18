@@ -5,7 +5,7 @@
 const base = import.meta.env.BASE_URL
 const bgFoto = `${base}images/hero.webp` // lobby hotelu (stejná fotka jako hero na webu)
 const QR =
-  'https://api.qrserver.com/v1/create-qr-code/?size=440x440&margin=0&ecc=M&color=22-32-46&bgcolor=255-255-255&data=https%3A%2F%2Fuutruksic.github.io%2Fmountain-resort-river-darek%2F'
+  'https://api.qrserver.com/v1/create-qr-code/?size=440x440&margin=0&ecc=M&color=22-32-46&bgcolor=243-237-220&data=https%3A%2F%2Fuutruksic.github.io%2Fmountain-resort-river-darek%2F'
 
 export default function PoukazPage() {
   return (
@@ -38,8 +38,12 @@ export default function PoukazPage() {
             </div>
             <div className="pk-bot-r">
               <div className="pk-web">
-                <p className="pk-web-t">Celý dárek online</p>
-                <p className="pk-web-u">uutruksic.github.io/mountain-resort-river-darek</p>
+                <p className="pk-web-t">Web jen pro vás</p>
+                <p className="pk-web-u">
+                  Připravený přímo pro vás — mnohem víc fotek, map a tipů k pobytu:
+                  <br />
+                  uutruksic.github.io/mountain-resort-river-darek
+                </p>
               </div>
               <div className="pk-qr-box">
                 <img src={QR} alt="QR kód na web" className="pk-qr" />
@@ -100,10 +104,10 @@ html, body { margin: 0; background: #fff; }
 .pk-num { font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: 21pt; letter-spacing: .1em; color: #e9cd84; margin: 0.5mm 0 1mm; }
 .pk-plat { font-size: 8.5pt; font-weight: 500; color: #eef2f9; margin: 0; text-shadow: 0 1px 3px rgba(0,0,0,.9); }
 .pk-bot-r { display: flex; align-items: center; gap: 3.5mm; text-align: right; }
-.pk-web { max-width: 44mm; }
-.pk-web-t { text-transform: uppercase; letter-spacing: .14em; font-size: 7pt; color: #dcc795; margin: 0 0 0.8mm; }
-.pk-web-u { font-size: 6.5pt; letter-spacing: .02em; color: rgba(255,255,255,.72); margin: 0; line-height: 1.35; text-shadow: 0 1px 2px rgba(0,0,0,.75); }
-.pk-qr-box { background: #fff; padding: 2mm; border-radius: 1.5mm; border: 0.8pt solid rgba(176,138,46,.6); box-shadow: 0 1mm 2.5mm rgba(0,0,0,.3); flex: 0 0 auto; }
+.pk-web { max-width: 54mm; }
+.pk-web-t { text-transform: uppercase; letter-spacing: .14em; font-size: 7.5pt; color: #e9cd84; margin: 0 0 1mm; }
+.pk-web-u { font-size: 6.5pt; letter-spacing: .02em; color: rgba(255,255,255,.78); margin: 0; line-height: 1.4; text-shadow: 0 1px 2px rgba(0,0,0,.75); }
+.pk-qr-box { background: #f3eddc; padding: 2.2mm; border-radius: 2.2mm; border: 0.8pt solid rgba(176,138,46,.75); box-shadow: 0 1mm 3mm rgba(0,0,0,.35); flex: 0 0 auto; }
 .pk-qr { width: 15mm; height: 15mm; display: block; }
 
 /* ===== ZADNÍ STRANA — věnování ===== */

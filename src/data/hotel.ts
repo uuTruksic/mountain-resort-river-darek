@@ -60,11 +60,10 @@ export const hotel = {
   ],
 
   pobytObsahuje: [
-    'Ubytování na 4 noci',
+    'Ubytování na 4 noci (5 dní) pro 2 osoby',
     'Snídaně a večeře formou švédských stolů (bufet)',
     '1 hodina privátní vstup do wellness',
     'Parkování',
-    'Místní poplatek obci',
   ],
   platnost: '15. 6. 2026 – 20. 12. 2026 a 10. 1. 2027 – 20. 12. 2027',
 
