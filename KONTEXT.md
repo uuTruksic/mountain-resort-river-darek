@@ -28,7 +28,7 @@ https://www.slevomat.cz/akce/2342442-pobyt-v-tatrach-polopenze-a-privatni-vstup-
   **privátní 30min vstup do vířivky**, welcome drink, **parkování a Wi-Fi zdarma**
 - **Pokoje:** Deluxe 38 m², apartmány 41 m², mezonet 62 m²
 - **Kontakt hotelu:** info@mrz.sk · +421 911 109 202 · +421 917 864 096
-- **Vzdálenost:** ~225 km / ~3,5 h autem od startu
+- **Vzdálenost:** ~565 km / ~6 h 45 min autem od startu (Třtice → D1 přes Brno → hranice Břeclav–Brodské → SK D1 Žilina–Poprad → Ždiar)
 
 ## 3) Pro koho a jaký obsah
 

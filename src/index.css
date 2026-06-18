@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+/* Vlastní designové tokeny (Tailwind v4 – konfigurace přímo v CSS) */
+@theme {
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+
+  --color-night-950: #0b1120;
+  --color-night-900: #0f172a;
+  --color-pine-500: #2f7d6b;
+  --color-gold-400: #d8b15a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Tailwind v4 už tlačítkům nedává cursor: pointer — vrátíme ho pro klikací prvky */
+@layer base {
+  button:not(:disabled),
+  [role='button'],
+  [role='link'] {
+    cursor: pointer;
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-night-950);
+  color: #e7ecf3;
+  -webkit-font-smoothing: antialiased;
+}
