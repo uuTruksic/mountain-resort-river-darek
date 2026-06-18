@@ -1,12 +1,15 @@
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom'
+import Logo from './Logo'
 
 const navItems = [
   { to: '/', label: 'Domů' },
   { to: '/o-pobytu', label: 'O pobytu' },
+  { to: '/program', label: 'Program' },
   { to: '/vylety', label: 'Výlety' },
   { to: '/cesta', label: 'Cesta' },
+  { to: '/prakticke', label: 'Praktické' },
 ]
 
 // Po přechodu na jinou stránku scrollni nahoru (změna filtru v URL ne — jen pathname).
@@ -30,11 +33,11 @@ export default function Layout() {
       <ScrollToTop />
       <header className="sticky top-0 z-40 border-b border-white/10 bg-night-950/80 backdrop-blur-md">
         <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-5">
-          <Link
-            to="/"
-            className="shrink-0 whitespace-nowrap font-[family-name:var(--font-display)] text-lg font-semibold text-white sm:text-xl"
-          >
-            Mountain Resort River
+          <Link to="/" className="flex shrink-0 items-center gap-2.5">
+            <Logo className="h-8 w-8 sm:h-9 sm:w-9" />
+            <span className="whitespace-nowrap font-[family-name:var(--font-display)] text-lg font-semibold text-white sm:text-xl">
+              Mountain Resort River
+            </span>
           </Link>
           {/* desktop odkazy */}
           <div className="hidden items-center gap-1 sm:flex">
@@ -53,6 +56,7 @@ export default function Layout() {
       <Outlet />
 
       <footer className="border-t border-white/10 bg-night-950 px-6 py-10 text-center text-sm text-slate-400">
+        <Logo className="mx-auto mb-3 h-10 w-10" />
         <p className="font-[family-name:var(--font-display)] text-lg text-white">
           Mountain Resort River
         </p>

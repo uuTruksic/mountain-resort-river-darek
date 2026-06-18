@@ -23,9 +23,15 @@ const rozcestnik = [
     foto: `${base}images/hotel/hotel-14.webp`,
   },
   {
+    to: '/program',
+    titul: 'Program na míru',
+    popis: 'Hotové nápady na den — léto i zima, nezávazně.',
+    foto: foto('strbske-pleso-okruh'),
+  },
+  {
     to: '/vylety',
     titul: 'Výlety a tipy',
-    popis: '25 míst v okolí — túry, lanovky, wellness i kultura.',
+    popis: '27 míst v okolí — túry, lanovky, wellness i kultura.',
     foto: foto('bachledka-chodnik-korunami-stromov'),
   },
   {
@@ -137,7 +143,7 @@ export default function HomePage() {
 
       {/* Rozcestník */}
       <section className="mx-auto max-w-6xl px-6 py-20">
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {rozcestnik.map((r) => (
             <Link
               key={r.to}

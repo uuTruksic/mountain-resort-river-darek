@@ -123,6 +123,31 @@ export default function VyletDetailPage() {
           </div>
         )}
 
+        {/* Doprava z hotelu */}
+        <div>
+          <h2 className="mb-4 text-sm uppercase tracking-widest text-slate-400">
+            Jak se tam dostat z hotelu
+          </h2>
+          <div className="flex flex-wrap gap-3">
+            <a
+              href={trasa(vylet, 'driving')}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-gold-400 px-5 py-2.5 text-sm font-medium text-night-950 transition hover:bg-[#e6c373]"
+            >
+              🚗 Autem{vylet.vzdalenostMin != null ? ` ~${vylet.vzdalenostMin} min` : ''} ↗
+            </a>
+            <a
+              href={trasa(vylet, 'transit')}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-2.5 text-sm font-medium text-white transition hover:border-white/50"
+            >
+              🚌 MHD ↗
+            </a>
+          </div>
+        </div>
+
         {/* Mapa */}
         <div>
           <h2 className="mb-4 text-sm uppercase tracking-widest text-slate-400">Na mapě</h2>
@@ -164,6 +189,21 @@ export default function VyletDetailPage() {
 function mapaSrc(v: Vylet) {
   const q = v.gps ? `${v.gps[0]},${v.gps[1]}` : `${v.nazev}, Slovensko`
   return `https://www.google.com/maps?q=${encodeURIComponent(q)}&z=13&output=embed`
+}
+
+const HOTEL = 'Mountain Resort River, Ždiar 451, Slovensko'
+
+// Trasa z hotelu na místo v Google Mapách (autem / MHD)
+function trasa(v: Vylet, mode: 'driving' | 'transit') {
+  const cil = v.gps ? `${v.gps[0]},${v.gps[1]}` : `${v.nazev}, Slovensko`
+  return (
+    'https://www.google.com/maps/dir/?api=1&origin=' +
+    encodeURIComponent(HOTEL) +
+    '&destination=' +
+    encodeURIComponent(cil) +
+    '&travelmode=' +
+    mode
+  )
 }
 
 function InfoKarta({

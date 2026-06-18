@@ -6,6 +6,9 @@ import VyletyPage from './pages/VyletyPage'
 import VyletDetailPage from './pages/VyletDetailPage'
 import CestaPage from './pages/CestaPage'
 import ZastavkaDetailPage from './pages/ZastavkaDetailPage'
+import ProgramPage from './pages/ProgramPage'
+import ProgramDenPage from './pages/ProgramDenPage'
+import PraktickePage from './pages/PraktickePage'
 
 export default function App() {
   return (
@@ -13,10 +16,13 @@ export default function App() {
       <Route element={<Layout />}>
         <Route path="/" element={<HomePage />} />
         <Route path="/o-pobytu" element={<OPobytuPage />} />
+        <Route path="/program" element={<ProgramPage />} />
+        <Route path="/program/:id" element={<ProgramDenPage />} />
         <Route path="/vylety" element={<VyletyPage />} />
         <Route path="/vylet/:id" element={<VyletDetailPage />} />
         <Route path="/cesta" element={<CestaPage />} />
         <Route path="/zastavka/:id" element={<ZastavkaDetailPage />} />
+        <Route path="/prakticke" element={<PraktickePage />} />
       </Route>
     </Routes>
   )

@@ -34,4 +34,8 @@ export const fotky: Record<string, FotoInfo> = {
   'levoca-unesco': { foto: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Levoca002.jpg/1280px-Levoca002.jpg' },
   'tatransky-ladovy-dom-hrebienok': { foto: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/LodowaSwiatynia.jpg/1280px-LodowaSwiatynia.jpg' },
   'tatranska-elektricka-zeleznica': { foto: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Tatra_Electric_Railway_2014_10.jpg/1280px-Tatra_Electric_Railway_2014_10.jpg' },
+  'bielovodska-dolina': { foto: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Bielovodsk%C3%A1_dolina._Vysok%C3%A9_Tatry_21_Slovakia.jpg/1280px-Bielovodsk%C3%A1_dolina._Vysok%C3%A9_Tatry_21_Slovakia.jpg' },
+  'popradske-pleso': { foto: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Popradsk%C3%A9_pleso%2C_Vysok%C3%A9_Tatry%2C_Slovakia_%28Unsplash%29.jpg/1280px-Popradsk%C3%A9_pleso%2C_Vysok%C3%A9_Tatry%2C_Slovakia_%28Unsplash%29.jpg' },
+  'jezerske-jazero': { foto: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Jezersk%C3%A9_jazero_2MS6.jpg/1280px-Jezersk%C3%A9_jazero_2MS6.jpg' },
+  'cerveny-klastor': { foto: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Cerveny_Klastor_01.JPG/1280px-Cerveny_Klastor_01.JPG' },
 }

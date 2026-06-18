@@ -145,4 +145,22 @@ export const galerie: Record<string, string[]> = {
     'https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Stadler_GTW_2-6_-_Tatra_Electric_Railway_%284%29.jpg/1280px-Stadler_GTW_2-6_-_Tatra_Electric_Railway_%284%29.jpg',
     'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Cesta_vlakom_pod_Tatrami%2C_pri_Mlynici.jpg/1280px-Cesta_vlakom_pod_Tatrami%2C_pri_Mlynici.jpg',
   ],
+  'bielovodska-dolina': [
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bielovodska_dolina_I.jpg/1280px-Bielovodska_dolina_I.jpg',
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Bielovodska_dolina_II.jpg/1280px-Bielovodska_dolina_II.jpg',
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Vysok%C3%A9_Tatry%2C_Bielovodsk%C3%A1_dolina%2C_z%C3%A1%C5%99%C3%AD_2011_%2813%29.JPG/1280px-Vysok%C3%A9_Tatry%2C_Bielovodsk%C3%A1_dolina%2C_z%C3%A1%C5%99%C3%AD_2011_%2813%29.JPG',
+  ],
+  'popradske-pleso': [
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Popradsk%C3%A9_pleso_2021.jpg/1280px-Popradsk%C3%A9_pleso_2021.jpg',
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Popradsk%C3%A9_pleso._Vysok%C3%A9_Tatry_21_Slovakia.jpg/1280px-Popradsk%C3%A9_pleso._Vysok%C3%A9_Tatry_21_Slovakia.jpg',
+  ],
+  'jezerske-jazero': [
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Jezersk%C3%A9_jazero_1.jpg/1280px-Jezersk%C3%A9_jazero_1.jpg',
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Jezersk%C3%A9_jazero_MS6.jpg/1280px-Jezersk%C3%A9_jazero_MS6.jpg',
+  ],
+  'cerveny-klastor': [
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Are%C3%A1l_kl%C3%A1%C5%A1tora.jpg/1280px-Are%C3%A1l_kl%C3%A1%C5%A1tora.jpg',
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/SK-Cerveny_Klastor-Kloster-1.jpg/1280px-SK-Cerveny_Klastor-Kloster-1.jpg',
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/N%C3%A1dvorie_%C4%8Cerven%C3%A9ho_kl%C3%A1%C5%A1tora.jpg/1280px-N%C3%A1dvorie_%C4%8Cerven%C3%A9ho_kl%C3%A1%C5%A1tora.jpg',
+  ],
 }
