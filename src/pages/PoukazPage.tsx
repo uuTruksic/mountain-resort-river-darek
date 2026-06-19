@@ -17,7 +17,6 @@ export default function PoukazPage() {
         <img src={bgFoto} alt="" className="pk-bg" />
         <div className="pk-shade" />
         <div className="pk-shade-b" />
-        <div className="pk-frame" />
         <div className="pk-in">
           <div className="pk-top">
             <span className="pk-eyebrow">Dárkový poukaz</span>
@@ -28,26 +27,24 @@ export default function PoukazPage() {
             <h1 className="pk-title">Mountain Resort River</h1>
             <p className="pk-sub">Pobyt na 5 dní / 4 noci pro 2 osoby · Ždiar, Belianské Tatry</p>
             <p className="pk-incl">Polopenze · privátní wellness · parkování v ceně</p>
+            <p className="pk-web">
+              A protože je to dárek, připravili jsme vám i{' '}
+              <span className="pk-web-em">vlastní web</span> — víc o hotelu, výlety, tipy i
+              zajímavosti z okolí. Stačí naskenovat kód.
+            </p>
           </div>
 
           <div className="pk-bot">
             <div className="pk-bot-l">
               <p className="pk-lbl">Číslo poukazu</p>
               <p className="pk-num">20122027</p>
-              <p className="pk-plat">Platnost: 15. 6.–20. 12. 2026 · 10. 1.–20. 12. 2027</p>
+              <p className="pk-plat">Platnost: 20. 6.–20. 12. 2026 · 10. 1.–20. 12. 2027</p>
             </div>
             <div className="pk-bot-r">
-              <div className="pk-web">
-                <p className="pk-web-t">Web jen pro vás</p>
-                <p className="pk-web-u">
-                  Připravený přímo pro vás — mnohem víc fotek, map a tipů k pobytu:
-                  <br />
-                  uutruksic.github.io/mountain-resort-river-darek
-                </p>
-              </div>
-              <div className="pk-qr-box">
+              <div className="pk-chip">
                 <img src={QR} alt="QR kód na web" className="pk-qr" />
               </div>
+              <p className="pk-qr-t">Naskenujte telefonem</p>
             </div>
           </div>
         </div>
@@ -87,8 +84,11 @@ html, body { margin: 0; background: #fff; }
 .pk-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
 .pk-shade { position: absolute; inset: 0; background: linear-gradient(115deg, rgba(9,14,26,.86) 0%, rgba(9,14,26,.55) 48%, rgba(9,14,26,.74) 100%); }
 .pk-shade-b { position: absolute; inset: 0; background: linear-gradient(to top, rgba(8,12,22,.82) 0%, rgba(8,12,22,.32) 26%, rgba(8,12,22,0) 48%); }
-.pk-frame { position: absolute; inset: 9mm; border: 0.8pt solid rgba(233,205,132,.55); }
-.pk-in { position: absolute; inset: 9mm; padding: 6mm 9mm; display: flex; flex-direction: column; justify-content: space-between; text-shadow: 0 1px 4px rgba(0,0,0,.7); }
+.pk-in { position: absolute; inset: 0; padding: 11mm 13mm; display: flex; flex-direction: column; justify-content: space-between; text-shadow: 0 1px 4px rgba(0,0,0,.7); }
+.pk-bot { display: flex; justify-content: space-between; align-items: flex-end; gap: 10mm; }
+.pk-bot-r { display: flex; flex-direction: column; align-items: center; text-align: center; }
+.pk-chip { background: #f3eddc; padding: 1.8mm; border-radius: 2mm; box-shadow: 0 1mm 5mm rgba(0,0,0,.45); }
+.pk-qr-t { text-transform: uppercase; font-size: 6pt; letter-spacing: .18em; color: #cdb98a; margin: 2.5mm 0 0; }
 
 .pk-top { display: flex; justify-content: space-between; align-items: baseline; }
 .pk-eyebrow { text-transform: uppercase; letter-spacing: .32em; font-size: 9pt; font-weight: 600; color: #e9cd84; }
@@ -96,19 +96,15 @@ html, body { margin: 0; background: #fff; }
 
 .pk-mid { }
 .pk-title { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; font-size: 27pt; line-height: 1.04; margin: 0; color: #fff; }
-.pk-sub { font-size: 10.5pt; color: #e7ddca; margin: 2.5mm 0 0; }
-.pk-incl { font-size: 8.5pt; letter-spacing: .04em; color: #cbb98e; margin: 1.5mm 0 0; }
+.pk-sub { font-size: 11.5pt; font-weight: 500; color: #f3ecdd; margin: 3mm 0 0; }
+.pk-incl { font-size: 10pt; letter-spacing: .02em; color: #e6dcc8; margin: 2mm 0 0; }
+.pk-web { font-size: 8.5pt; line-height: 1.45; color: #d6ccb9; margin: 5mm 0 0; max-width: 110mm; text-shadow: 0 1px 4px rgba(0,0,0,.9); }
+.pk-web-em { color: #dcb75e; font-weight: 600; }
 
-.pk-bot { display: flex; justify-content: space-between; align-items: flex-end; gap: 8mm; }
 .pk-lbl { text-transform: uppercase; letter-spacing: .18em; font-size: 7.5pt; color: #cdb98a; margin: 0; }
 .pk-num { font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: 21pt; letter-spacing: .1em; color: #e9cd84; margin: 0.5mm 0 1mm; }
 .pk-plat { font-size: 8.5pt; font-weight: 500; color: #eef2f9; margin: 0; text-shadow: 0 1px 3px rgba(0,0,0,.9); }
-.pk-bot-r { display: flex; align-items: center; gap: 3.5mm; text-align: right; }
-.pk-web { max-width: 54mm; }
-.pk-web-t { text-transform: uppercase; letter-spacing: .14em; font-size: 7.5pt; color: #e9cd84; margin: 0 0 1mm; }
-.pk-web-u { font-size: 6.5pt; letter-spacing: .02em; color: rgba(255,255,255,.78); margin: 0; line-height: 1.4; text-shadow: 0 1px 2px rgba(0,0,0,.75); }
-.pk-qr-box { background: #f3eddc; padding: 2.2mm; border-radius: 2.2mm; border: 0.8pt solid rgba(176,138,46,.75); box-shadow: 0 1mm 3mm rgba(0,0,0,.35); flex: 0 0 auto; }
-.pk-qr { width: 15mm; height: 15mm; display: block; }
+.pk-qr { width: 17mm; height: 17mm; display: block; }
 
 /* ===== ZADNÍ STRANA — věnování ===== */
 .pk-back { position: relative; width: 216mm; height: 105mm; overflow: hidden; background: #fbf7ee; color: #2a3344; }

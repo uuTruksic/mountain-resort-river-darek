@@ -65,7 +65,7 @@ export const hotel = {
     '1 hodina privátní vstup do wellness',
     'Parkování',
   ],
-  platnost: '15. 6. 2026 – 20. 12. 2026 a 10. 1. 2027 – 20. 12. 2027',
+  platnost: '20. 6. 2026 – 20. 12. 2026 a 10. 1. 2027 – 20. 12. 2027',
 
   zajimavosti: [
     'Ždiar je tradiční goralská obec s typickou dřevěnou architekturou — jedna z nejhezčích podtatranských vesnic.',
