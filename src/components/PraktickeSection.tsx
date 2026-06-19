@@ -16,12 +16,12 @@ const bloky: Blok[] = [
     ],
   },
   {
-    ikona: '💶',
-    titul: 'Peníze a platby',
+    ikona: '🍲',
+    titul: 'Jídlo a speciality',
     body: [
-      'Na Slovensku se platí eurem (€).',
-      'Kartou zaplatíte skoro všude, ale na menší koliby, parkoviště a vstupy se hodí i hotovost.',
-      'Lanovky bývají levnější online předem (Gopass).',
+      'V ceně máte snídani i večeři (polopenze) — na obědy se dá vyrazit do okolí.',
+      'Ochutnejte slovenskou klasiku: bryndzové halušky, kapustnicu nebo lokše.',
+      'Po cestě i u tras najdete koliby a bufety — ideální na svačinu s výhledem.',
     ],
   },
   {
@@ -57,7 +57,7 @@ const bloky: Blok[] = [
     titul: 'Dobré vědět',
     body: [
       'Mobilní data fungují v EU jako doma, bez příplatku za roaming.',
-      'Slovenština a čeština si navzájem rozumí. 🙂',
+      'Lístky na lanovky bývají levnější online předem (Gopass).',
       'Otevírací doby a ceny se sezónně mění — u každého místa je odkaz na ověření.',
     ],
   },

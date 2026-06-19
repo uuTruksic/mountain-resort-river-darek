@@ -28,9 +28,9 @@ export default function PoukazPage() {
             <p className="pk-sub">Pobyt na 5 dní / 4 noci pro 2 osoby · Ždiar, Belianské Tatry</p>
             <p className="pk-incl">Polopenze · privátní wellness · parkování v ceně</p>
             <p className="pk-web">
-              A protože je to dárek, připravili jsme vám i{' '}
-              <span className="pk-web-em">vlastní web</span> — víc o hotelu, výlety, tipy i
-              zajímavosti z okolí. Stačí naskenovat kód.
+              A nejen to — připravili jsme vám{' '}
+              <span className="pk-web-em">vlastní web</span>: víc o hotelu, výlety, tipy a
+              zajímavosti z okolí.
             </p>
           </div>
 
@@ -44,7 +44,10 @@ export default function PoukazPage() {
               <div className="pk-chip">
                 <img src={QR} alt="QR kód na web" className="pk-qr" />
               </div>
-              <p className="pk-qr-t">Naskenujte telefonem</p>
+              <p className="pk-qr-t">Naskenujte, nebo navštivte:</p>
+              <a className="pk-qr-url" href="https://www.is.gd/darek_tatry">
+                www.is.gd/darek_tatry
+              </a>
             </div>
           </div>
         </div>
@@ -88,7 +91,8 @@ html, body { margin: 0; background: #fff; }
 .pk-bot { display: flex; justify-content: space-between; align-items: flex-end; gap: 10mm; }
 .pk-bot-r { display: flex; flex-direction: column; align-items: center; text-align: center; }
 .pk-chip { background: #f3eddc; padding: 1.8mm; border-radius: 2mm; box-shadow: 0 1mm 5mm rgba(0,0,0,.45); }
-.pk-qr-t { text-transform: uppercase; font-size: 6pt; letter-spacing: .18em; color: #cdb98a; margin: 2.5mm 0 0; }
+.pk-qr-t { font-size: 6.5pt; letter-spacing: .02em; color: #cdb98a; margin: 2.5mm 0 0; }
+.pk-qr-url { display: block; text-decoration: none; font-size: 7pt; letter-spacing: normal; color: #e4dbc8; margin: 1mm 0 0; }
 
 .pk-top { display: flex; justify-content: space-between; align-items: baseline; }
 .pk-eyebrow { text-transform: uppercase; letter-spacing: .32em; font-size: 9pt; font-weight: 600; color: #e9cd84; }
@@ -98,7 +102,7 @@ html, body { margin: 0; background: #fff; }
 .pk-title { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; font-size: 27pt; line-height: 1.04; margin: 0; color: #fff; }
 .pk-sub { font-size: 11.5pt; font-weight: 500; color: #f3ecdd; margin: 3mm 0 0; }
 .pk-incl { font-size: 10pt; letter-spacing: .02em; color: #e6dcc8; margin: 2mm 0 0; }
-.pk-web { font-size: 8.5pt; line-height: 1.45; color: #d6ccb9; margin: 5mm 0 0; max-width: 110mm; text-shadow: 0 1px 4px rgba(0,0,0,.9); }
+.pk-web { font-size: 8.5pt; line-height: 1.45; color: #c7bda9; margin: 7mm 0 0; max-width: 100mm; padding-left: 4mm; border-left: 1.4pt solid rgba(220,183,94,.5); text-shadow: 0 1px 4px rgba(0,0,0,.9); }
 .pk-web-em { color: #dcb75e; font-weight: 600; }
 
 .pk-lbl { text-transform: uppercase; letter-spacing: .18em; font-size: 7.5pt; color: #cdb98a; margin: 0; }
